@@ -1,0 +1,23 @@
+<section>
+  <h1>
+    <% if(heading) { %> <%= heading %> <% } else { %> Oops Something Went Wrong
+    <% } %>
+  </h1>
+
+  <% if(errorMessage && typeof errorMessage === 'string') {%>
+  <div class="errors">
+    <ul>
+      <li><%= errorMessage %></li>
+    </ul>
+  </div>
+  <% } else if(errorMessage && errorMessage.length > 0) { %>
+  <div class="errors">
+    <ul>
+      <% errorMessage.forEach(function(errorMessage) { %>
+      <li><%= errorMessage?.message %></li>
+      <% }) %>
+    </ul>
+    <% } %>
+  </div>
+  <h5 class="text-center"><% if (suggestion) { %> <%= suggestion %> <% } %></h5>
+</section>

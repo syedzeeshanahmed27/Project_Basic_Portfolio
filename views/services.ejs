@@ -1,0 +1,15 @@
+<div class="text-center">
+    <div>
+        <h2>Our Story</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
+    <div>
+        <h2>Our Team</h2>
+        <% teamMembers.forEach(function(member) { %>
+            <div>
+                <img src="/images/zee.png" alt="zee">
+                <%= member.name %> - <%= member.position %>
+            </div>
+        <% }); %>
+    </div>
+</div>

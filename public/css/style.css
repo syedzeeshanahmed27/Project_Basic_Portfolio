@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.actual-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  width: auto;
+}
+
+.actual-form label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.actual-form input,
+.actual-form button,
+.actual-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 300px;
+}
+
+.actual-form button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  width: 300px;
+}
+
+.actual-form button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ccc;
+  margin-top: auto;
+}
+
+.jumbotron {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.jumbotron h1 {
+  color: #1c244b;
+  font-weight: 600;
+  font-size: 65px;
+  max-width: 60vw;
+  margin: 30px auto 20px auto;
+}
+
+.address-info {
+  background-color: #f3f5f8;
+  width: 70vw;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.address {
+  color: #474e5a;
+  font-weight: 300;
+}
+.phone-number {
+  font-weight: 400;
+}
+
+.contact {
+  text-decoration: none;
+  color: white;
+  background-color: #467ff7;
+  border-radius: 100px 100px 100px 100px;
+  padding: 16px 55px 16px 55px;
+}
+.about {
+  margin: 40px 0;
+}
+.about-me {
+  max-width: 300px;
+}
+
+.about-me h2 {
+  font-weight: 600;
+  font-size: 60px;
+  color: #1c244b;
+  margin-bottom: 8px;
+}
+
+.about-me p {
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.services {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+.services h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 35px;
+  color: #1c244b;
+}
+.service {
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #1c244b;
+}
+
+.service img {
+  width: 100%;
+}
+.success-stories {
+  padding: 50px 0;
+}
+
+.success-stories h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #1c244b;
+  margin-bottom: 35px;
+}
+
+.success h3 {
+  color: #1c244b;
+}
+.call-to-action {
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.errors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errors ul {
+  font-size: 20px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.submit-actions {
+  margin-top: 25px;
+  width: 40%;
+}
+
+.project-card {
+  width: 360px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .jumbotron {
+    padding-top: 20px;
+  }
+
+  .jumbotron h1 {
+    font-size: 28px;
+    max-width: 70vw;
+    margin-bottom: 5px;
+  }
+
+  .address-info {
+    width: 90vw;
+    padding: 20px 10px;
+  }
+
+  .address {
+    max-width: 40%;
+    text-align: left;
+    line-height: 1;
+  }
+
+  .contact {
+    padding: 12px 38px 12px 38px;
+    font-size: 14px;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about img {
+    max-width: 80vw;
+    margin-top: 30px;
+  }
+  .about-me {
+    max-width: 80vw;
+  }
+
+  .about-me h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .about-me p {
+    font-size: 14px;
+  }
+}

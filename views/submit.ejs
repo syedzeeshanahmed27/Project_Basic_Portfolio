@@ -1,0 +1,30 @@
+<div class="flex flex-col items-center justify-center">
+  <h1>Thank You!</h1>
+  <p>Your form has been <%= mode %> successfully.</p>
+  <p>We will get back to you as soon as possible.</p>
+
+  <!-- Display the form data if formData exists -->
+  <% if (formData && Object.keys(formData).length > 0) { %>
+  <h2 class="text-center">Form Data:</h2>
+  <ul>
+    <li>Name: <%= formData?.name %></li>
+    <li>Email: <%= formData?.email %></li>
+    <li>Message: <%= formData?.message %></li>
+  </ul>
+  <% } %>
+
+  <div class="flex justify-between submit-actions">
+    <form action="/updatemessage" method="post">
+      <input type="hidden" name="id" value="<%= formData.id %>" />
+      <input type="hidden" name="name" value="<%= formData.name %>" />
+      <input type="hidden" name="email" value="<%= formData.email %>" />
+      <input type="hidden" name="message" value="<%= formData.message %>" />
+      <button type="submit">Update Message</button>
+    </form>
+    <form action="/deleteUser" method="POST">
+      <input type="hidden" name="id" value="<%= formData.id %>" />
+      <!-- Assuming formData has an id -->
+      <button type="submit">Delete Message</button>
+    </form>
+  </div>
+</div>
