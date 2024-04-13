@@ -81,6 +81,7 @@ footer {
 .jumbotron {
   padding-top: 70px;
   padding-bottom: 70px;
+  height: 400px;
 }
 .jumbotron h1 {
   color: #1c244b;
