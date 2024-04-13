@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=jumbotron:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
 }
 
 body {
-  font-family: "jumbotron", !important;
+  font-family: "Poppins", sans-serif !important;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -18,7 +18,7 @@ body {
 .projects-me h2,
 .projects-me p,
 .projects-me a {
-    margin: 0;
+  margin: 0;
 }
 h1 {
   color: #333;
@@ -31,16 +31,16 @@ h2 {
   padding: 20px 0;
 }
 
-
 .actual-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e8e8e8;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin: 0;
-  width: auto;
+  margin: 20px auto;
+  width: fit-content;
 }
 
 .actual-form label {
@@ -81,7 +81,7 @@ footer {
 .jumbotron {
   padding-top: 70px;
   padding-bottom: 70px;
-  height: 400px;
+  background-color: #007bff;
 }
 .jumbotron h1 {
   color: #1c244b;
@@ -117,8 +117,13 @@ footer {
 .about {
   margin: 40px 0;
 }
+
+.about img {
+  width: 500px;
+}
+
 .about-me {
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .about-me h2 {
@@ -126,6 +131,7 @@ footer {
   font-size: 60px;
   color: #1c244b;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .about-me p {
@@ -234,6 +240,29 @@ footer {
   margin-bottom: 20px;
 }
 
+.about-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-me-section {
+  background-color: #007bff;
+  padding: 20px 0px;
+  color: white;
+}
+
+.projects-head {
+  background-color: #007bff;
+  padding: 30px 0px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.projects-head h2 {
+  font-size: 50px;
+}
+.projects-head p {
+}
 @media screen and (max-width: 480px) {
   .jumbotron {
     padding-top: 20px;
