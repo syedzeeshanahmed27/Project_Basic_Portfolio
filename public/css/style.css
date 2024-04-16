@@ -1,92 +1,450 @@
-<div class="projects-head text-center">
-    <h2>My Projects</h2>
-    <p>
-      I have served almost every industry in the past 5 years.I have created
-      websites for NGOs, E-commerce, FMCGs and other SMEs.<br />
-      We are capable of handling all sorts of projects related to digital
-      marketing!
-    </p>
-  </div>
-  <section class="projects-section">
-    <div class="container projects">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="/images/cleanmaxcar.jpg" alt="Clean Max Car Wash" />
-            <h3>Clean Max Car Wash</h3>
-            <p>
-              Clean Max Car Wash started in 1980 with the mission to serve the
-              community in GTA specially in Mississauga, where there was not
-              enough options for people to get proper auto detailing.
-            </p>
-            <a
-              href="https://cleanmaxcarwashes.com/"
-              class="btn"
-              style="
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: #007bff;
-                color: #fff;
-                text-decoration: none;
-                border-radius: 5px;
-              "
-              >View Project</a
-            >
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="/images/Light.jpg" alt="Light Legacy Books (LLB)" />
-            <h3>Light Legacy Books (LLB)</h3>
-            <p>
-              Light Legacy Books (LLB) is a children’s publishing house dedicated
-              to bringing to light the stories of little-known heroes from across
-              the globe.
-            </p>
-            <a
-              href="https://www.lightlegacybooks.com/"
-              class="btn"
-              style="
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: #007bff;
-                color: #fff;
-                text-decoration: none;
-                border-radius: 5px;
-              "
-              >View Project</a
-            >
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="/images/NICE.jpg" alt="The N (NICE)" />
-            <h3>The New Haven Inner City Enrichment, (NICE)</h3>
-            <p>
-              The New Haven Inner City Enrichment, (NICE) Center was founded by a
-              group of friends in January 2015 and is a registered 501(3)c tax
-              exempt organization.
-            </p>
-            <a
-              href="https://thenewhaveninnercitycenter.com/"
-              class="btn"
-              style="
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: #007bff;
-                color: #fff;
-                text-decoration: none;
-                border-radius: 5px;
-              "
-              >View Project</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="get-started">
-      <h2>Ready To get started?</h2>
-      <p>Contact Me Today For Free Consultation</p>
-      <a href="/contact" class="btn btn-lg btn-outline-light">Contact Me</a>
-    </div>
-  </section>
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.container.services {
+  text-align: center;
+}
+.projects-me h2,
+.projects-me p,
+.projects-me a {
+  margin: 0;
+}
+h1 {
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+h2 {
+  color: #1c244b;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.actual-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.actual-form label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.actual-form input,
+.actual-form button,
+.actual-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 300px;
+}
+
+.actual-form button {
+  background-color: #467ff7;
+  color: white;
+  cursor: pointer;
+  width: 300px;
+}
+
+.actual-form button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ccc;
+  margin-top: auto;
+}
+
+.jumbotron {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.jumbotron h1 {
+  color: #1c244b;
+  font-weight: 600;
+  font-size: 65px;
+  max-width: 60vw;
+  margin: 30px auto 20px auto;
+}
+
+.address-info {
+  background-color: #f3f5f8;
+  width: 70vw;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.address {
+  color: #474e5a;
+  font-weight: 300;
+}
+.phone-number {
+  font-weight: 400;
+}
+
+.contact {
+  text-decoration: none;
+  color: white;
+  background-color: #467ff7;
+  border-radius: 100px 100px 100px 100px;
+  padding: 16px 55px 16px 55px;
+}
+.about {
+  margin: 150px 0;
+  gap: 65px;
+}
+
+.about img {
+  /* width: 500px; */
+}
+
+.about-me {
+  max-width: 350px;
+}
+
+.about-me h2 {
+  font-weight: 600;
+  font-size: 60px;
+  color: #1c244b;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.about-me p {
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.why-choose-me {
+  text-align: center;
+  margin: 200px 0px;
+}
+.why-choose-me h2 {
+  font-weight: 600;
+  font-size: 65px;
+  color: #1c244b;
+  margin-bottom: 8px;
+}
+
+.choose {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+.choose-head {
+  font-weight: 700;
+  font-size: 25px;
+}
+.choose-text {
+  color: #726b9a;
+}
+
+.clean-max {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+.clean-max div {
+  color: #726b9a;
+  max-width: 400px;
+}
+.clean-max div h3 {
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+}
+.services {
+  /* background-color: #f8f9fa; */
+  padding: 100px 0;
+}
+.services h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 55px;
+  color: #1c244b;
+}
+.services p {
+  color: #726b9a;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+.service {
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #1c244b;
+}
+
+.service img {
+  width: 100%;
+}
+.success-stories {
+  padding: 50px 0;
+}
+
+.success-stories h2 {
+  font-size: 55px;
+  font-weight: 600;
+  color: #1c244b;
+  margin-bottom: 35px;
+}
+.success-stories div {
+  margin: 0 auto;
+}
+
+.success {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.success h3 {
+  color: #1c244b;
+}
+.call-to-action {
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* .errors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.errors ul {
+  font-size: 20px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+
+.submit-actions {
+  margin-top: 25px;
+  width: 40%;
+}
+
+.project-card {
+  width: 360px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  height: 520px;
+  position: relative;
+}
+
+.project-card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  position: absolute;
+  bottom: 20px;
+}
+
+.about-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-me-section {
+  background-color: #007bff;
+  padding: 20px 0px;
+  color: white;
+}
+
+.projects-head {
+  background-color: #007bff;
+  padding: 30px 0px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.projects-head h2 {
+  font-size: 50px;
+}
+
+.get-started {
+  background-color: #007bff;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.get-started h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.get-started p {
+  margin-bottom: 19px;
+}
+
+.projects {
+  margin: 50px 0;
+}
+
+.contact-page {
+  background-color: #007bff;
+  height: 180px;
+  margin-bottom: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.contact-page h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.error-page {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  gap: 100px;
+  justify-content: center;
+  padding: 0px 50px;
+  padding-bottom: 50px;
+}
+
+.error-page img {
+  width: 500px;
+  height: 500px;
+}
+.error-message h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.errors ul {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.suggestion-container {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .jumbotron {
+    padding-top: 20px;
+  }
+
+  .jumbotron h1 {
+    font-size: 28px;
+    max-width: 70vw;
+    margin-bottom: 5px;
+  }
+
+  .address-info {
+    width: 90vw;
+    padding: 20px 10px;
+  }
+
+  .address {
+    max-width: 40%;
+    text-align: left;
+    line-height: 1;
+  }
+
+  .contact {
+    padding: 12px 38px 12px 38px;
+    font-size: 14px;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about img {
+    max-width: 80vw;
+    margin-top: 30px;
+  }
+  .about-me {
+    max-width: 80vw;
+  }
+
+  .about-me h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .about-me p {
+    font-size: 14px;
+  }
+}
