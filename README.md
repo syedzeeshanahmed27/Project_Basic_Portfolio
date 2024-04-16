@@ -29,6 +29,19 @@ Copy code
 npm start
 Access the Website:
 Open your web browser and navigate to http://localhost:3000 (or the port you specified) to view the website.
+Database Setup
+Ensure you have MySQL installed and running.
+Create a database named digital_marketing.
+Create a collection named feedback.
+Database Schema
+The feedback collection has the following schema:
+name: String, required
+email: String, required
+message: String, required
+Rationale
+name: To store the name of the person providing feedback.
+email: To store the email address of the person providing feedback.
+message: To store the feedback message.
 
 Submit the Contact Form:
 Fill out the contact form on the website and submit it. You should see a thank you message with the submitted form data.
@@ -38,5 +51,7 @@ Navigate to the "Projects" and "Services" pages to view the content.
 
 Stop the Application:
 To stop the application, press Ctrl + C in the terminal where the application is running.
+
+
 
 This concludes the setup and running instructions for the website. If you encounter any issues, refer to the troubleshooting section of this README or reach out for assistance.
