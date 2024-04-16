@@ -81,7 +81,6 @@ footer {
 .jumbotron {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #007bff;
 }
 .jumbotron h1 {
   color: #1c244b;
@@ -115,11 +114,12 @@ footer {
   padding: 16px 55px 16px 55px;
 }
 .about {
-  margin: 40px 0;
+  margin: 150px 0;
+  gap: 65px;
 }
 
 .about img {
-  width: 500px;
+  /* width: 500px; */
 }
 
 .about-me {
@@ -137,17 +137,63 @@ footer {
 .about-me p {
   font-size: 17px;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.why-choose-me {
+  text-align: center;
+  margin: 200px 0px;
+}
+.why-choose-me h2 {
+  font-weight: 600;
+  font-size: 65px;
+  color: #1c244b;
+  margin-bottom: 8px;
+}
+
+.choose {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+.choose-head {
+  font-weight: 700;
+  font-size: 25px;
+}
+.choose-text {
+  color: #726b9a;
+}
+
+.clean-max {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+.clean-max div {
+  color: #726b9a;
+  max-width: 400px;
+}
+.clean-max div h3 {
+  color: black;
+  font-style: italic;
+  font-size: 20px;
 }
 .services {
-  background-color: #f8f9fa;
-  padding: 50px 0;
+  /* background-color: #f8f9fa; */
+  padding: 100px 0;
 }
 .services h2 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 55px;
   color: #1c244b;
+}
+.services p {
+  color: #726b9a;
+  font-size: 20px;
+  margin-bottom: 80px;
 }
 .service {
   margin-bottom: 30px;
@@ -167,10 +213,19 @@ footer {
 }
 
 .success-stories h2 {
-  font-size: 35px;
+  font-size: 55px;
   font-weight: 600;
   color: #1c244b;
   margin-bottom: 35px;
+}
+.success-stories div {
+  margin: 0 auto;
+}
+
+.success {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 15px;
 }
 
 .success h3 {
@@ -220,10 +275,6 @@ footer {
   align-items: center;
 }
 
-.gap-30 {
-  gap: 30px;
-}
-
 .submit-actions {
   margin-top: 25px;
   width: 40%;
@@ -231,6 +282,18 @@ footer {
 
 .project-card {
   width: 360px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  height: 520px;
+  position: relative;
+}
+
+.project-card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
 }
 
 .project-card img {
@@ -238,6 +301,11 @@ footer {
   height: 200px;
   object-fit: cover;
   margin-bottom: 20px;
+}
+
+.project-card a {
+  position: absolute;
+  bottom: 20px;
 }
 
 .about-section {
@@ -261,8 +329,45 @@ footer {
 .projects-head h2 {
   font-size: 50px;
 }
-.projects-head p {
+
+.get-started {
+  background-color: #007bff;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
+
+.get-started h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.get-started p {
+  margin-bottom: 19px;
+}
+
+.projects {
+  margin: 50px 0;
+}
+
+.contact-page {
+  background-color: #007bff;
+  height: 180px;
+  margin-bottom: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.contact-page h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
 @media screen and (max-width: 480px) {
   .jumbotron {
     padding-top: 20px;
