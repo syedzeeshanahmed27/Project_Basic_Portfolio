@@ -1,5 +1,17 @@
 const db = require("./db");
 
+function GetContact(id, callback) {
+  const selectSql = "SELECT * FROM contact WHERE id=?";
+  db.get(selectSql, [id], function (err, row) {
+    if (err) {
+      return callback(err);
+    }
+    if (!row) {
+      return callback(new Error("This Entry Doesn't Exists in Our Database"));
+    }
+    callback(null, row);
+  });
+}
 function AddContact(name, email, message, callback) {
   const sql = "INSERT INTO contact(name, email, message) VALUES (?, ?, ?)";
 
@@ -54,4 +66,4 @@ function UpdateUserInfo(id, name, email, message, callback) {
     });
   });
 }
-module.exports = { AddContact, DeleteUser, UpdateUserInfo };
+module.exports = { AddContact, DeleteUser, UpdateUserInfo, GetContact };

@@ -3,7 +3,12 @@ const expressLayouts = require("express-ejs-layouts");
 const { formValidationSchema } = require("../schemas/formvalidation");
 const app = express();
 const multer = require("multer");
-const { AddContact, DeleteUser, UpdateUserInfo } = require("./actions");
+const {
+  AddContact,
+  DeleteUser,
+  UpdateUserInfo,
+  GetContact,
+} = require("./actions");
 const PORT = process.env.PORT || 4000;
 
 app.use(express.static(__dirname + "/../public"));
@@ -105,18 +110,32 @@ app.post("/deleteUser", (req, res) => {
     });
     return;
   }
-  DeleteUser(id, (err, changes) => {
+  GetContact(id, (err, row) => {
     if (err) {
       res.render("error", {
         title: "Error Page",
         heading: "Could not  delete the entry",
         errorMessage: err.message,
-        suggestion: "Try to Go back",
+        suggestion: "",
       });
       return;
     }
 
-    res.render("deletesuccess", { title: "Delete was Successful" });
+    DeleteUser(id, (err, changes) => {
+      if (err) {
+        res.render("error", {
+          title: "Error Page",
+          heading: "Could not  delete the entry",
+          errorMessage: err.message,
+          suggestion: "Try to Go back",
+        });
+        return;
+      }
+
+      res.render("deletesuccess", {
+        title: "Delete was Successful",
+      });
+    });
   });
 });
 
@@ -135,14 +154,25 @@ app.post("/updatemessage", (req, res) => {
     return;
   }
 
-  const { message, name, email } = validatedData.data;
+  GetContact(id, (err, row) => {
+    if (err) {
+      res.render("error", {
+        title: "Error Page",
+        heading: "Could not Update the entry",
+        errorMessage: err.message,
+        suggestion: "Try to Go back",
+      });
+      return;
+    }
+    const { message, name, email } = validatedData.data;
 
-  res.render("updateform", {
-    title: "Update Form Page",
-    id,
-    name,
-    email,
-    message,
+    res.render("updateform", {
+      title: "Update Form Page",
+      id,
+      name,
+      email,
+      message,
+    });
   });
 });
 

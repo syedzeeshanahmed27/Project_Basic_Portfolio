@@ -238,11 +238,11 @@ footer {
   text-align: center;
 }
 
-.errors {
+/* .errors {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .errors ul {
   font-size: 20px;
@@ -366,6 +366,36 @@ footer {
 .contact-page h2 {
   font-weight: 600;
   font-size: 40px;
+}
+
+.error-page {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  gap: 100px;
+  justify-content: center;
+  padding: 0px 50px;
+  padding-bottom: 50px;
+}
+
+.error-page img {
+  width: 500px;
+  height: 500px;
+}
+.error-message h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.errors ul {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.suggestion-container {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 480px) {

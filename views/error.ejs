@@ -1,23 +1,30 @@
-<section>
-  <h1>
-    <% if(heading) { %> <%= heading %> <% } else { %> Oops Something Went Wrong
-    <% } %>
-  </h1>
+<section class="error-page">
+  <div class="error-message">
+    <h1>
+      <% if(heading) { %> <%= heading %> <% } else { %> Oops Something Went
+      Wrong <% } %>
+    </h1>
 
-  <% if(errorMessage && typeof errorMessage === 'string') {%>
-  <div class="errors">
-    <ul>
-      <li><%= errorMessage %></li>
-    </ul>
-  </div>
-  <% } else if(errorMessage && errorMessage.length > 0) { %>
-  <div class="errors">
-    <ul>
-      <% errorMessage.forEach(function(errorMessage) { %>
-      <li><%= errorMessage?.message %></li>
-      <% }) %>
-    </ul>
+    <% if(errorMessage && typeof errorMessage === 'string') { %>
+    <div class="errors">
+      <ul>
+        <li><%= errorMessage %></li>
+      </ul>
+    </div>
+    <% } else if(errorMessage && errorMessage.length > 0) { %>
+    <div class="errors">
+      <ul>
+        <% errorMessage.forEach(function(errorMessage) { %>
+        <li><%= errorMessage?.message %></li>
+        <% }) %>
+      </ul>
+    </div>
     <% } %>
+
+    <div class="suggestion-container">
+      <!-- Wrap the suggestion in its own div -->
+      <div><% if (suggestion) { %> <%= suggestion %> <% } %></div>
+    </div>
   </div>
-  <h5 class="text-center"><% if (suggestion) { %> <%= suggestion %> <% } %></h5>
+  <img src="images/error.jpg" />
 </section>
