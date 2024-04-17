@@ -274,6 +274,11 @@ footer {
   font-style: italic;
 }
 
+.suggestion-container {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .text-center {
   text-align: center !important;
 }
