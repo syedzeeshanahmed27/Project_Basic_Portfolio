@@ -29,12 +29,16 @@ Copy code
 npm start
 Access the Website:
 Open your web browser and navigate to http://localhost:3000 (or the port you specified) to view the website.
-Database Setup
-Ensure you have MySQL installed and running.
-Create a database named digital_marketing.
-Create a collection named feedback.
-Database Schema
-The feedback collection has the following schema:
+
+
+Database Setup:
+Ensure you have sqlite3 npm package installed and running.
+Create a database named OurDatabase.db.
+Create a collection/table named contact.
+
+
+Database Schema:
+The contact collection has the following schema:
 name: String, required
 email: String, required
 message: String, required
